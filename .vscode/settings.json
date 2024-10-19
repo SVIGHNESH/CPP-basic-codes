@@ -5,5 +5,16 @@
         "format": "c",
         "ostream": "cpp"
     },
-    "C_Cpp.errorSquiggles": "disabled"
+    "C_Cpp.errorSquiggles": "disabled",
+    "background.autoInstall": true,
+    "background.editorBackgrounds": [
+        "https://img.freepik.com/free-photo/japan-background-digital-art_23-2151546123.jpg"
+    ],
+    "background.sidebarBackgrounds": [
+        "https://img.freepik.com/free-photo/japan-background-digital-art_23-2151546123.jpg?size=626&ext=jpg"
+    ],
+    "background.panelBackgrounds": [
+        "https://img.freepik.com/free-photo/japan-background-digital-art_23-2151546123.jpg?size=626&ext=jpg"
+    ],
+    "terminal.integrated.rightClickBehavior": "default"
 }
