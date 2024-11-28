@@ -15,9 +15,9 @@ int partition(int arr[],int s,int e){
 
     int pivotIndex = s + cnt;
     swap(arr[pivotIndex],arr[s]);
-
-    //yahe pe hum right aur left wala part smbhal lete ha 
     int i = s,j = e;
+    //yahe pe hum right aur left wala part smbhal lete ha 
+    
 
     while(i < pivotIndex && j > pivotIndex ){
 
