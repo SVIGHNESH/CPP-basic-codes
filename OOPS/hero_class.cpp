@@ -51,6 +51,10 @@ int   main (){
     cout << "Level of a is " << (*b).getLevel() << endl ;
 
 
+    cout << "Health of a is " << b-> getHealth() << endl ;
+    cout << "Level of a is " << b->getLevel() << endl ;
+
+
 
     // cout << "The Size of the object is " << sizeof(Ramesh) << endl;
 
