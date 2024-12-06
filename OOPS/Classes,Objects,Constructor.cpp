@@ -11,16 +11,37 @@ class Hero{
       int Health ;
    public:
 
-          Hero()
-          
-          {
+
+
+       
+              //parameterised constructor 
+              Hero(int Health){
+              this -> Health = Health;
+              cout << "Parameterised Constructor Called." <<endl;
+
+
+        }
+
+   
+          //simple constructor
+          Hero(){
                   cout << "Constructor Called" <<endl;
-
-          }
-              char level ;
+           }
 
 
-      int  getHealth(){
+           //copy constructor 
+
+           Hero( Hero &  temp ){
+            this -> Health = temp.Health;
+
+
+
+           }
+              
+              
+              
+        char level ;
+        int  getHealth(){
         return Health;
       }
 
@@ -43,13 +64,14 @@ class Hero{
 
 int   main (){
     //object created statically
+    Hero Ramesh(23);
+    cout << Ramesh.getHealth() << endl;
+    Ramesh.setHealth(234);
 
+    cout << Ramesh.getHealth() << endl;
 
-   Hero Ramesh;
-  Hero *h = new Hero;
-
-    
-
+    Hero Suresh(Ramesh);
+    cout << Suresh.getHealth() << endl;
 
 
 
