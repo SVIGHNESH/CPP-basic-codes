@@ -45,9 +45,9 @@ int   main (){
     //object created statically
 
 
-    cout << "HI" << endl;
+
     Hero Ramesh;
-    cout << "Hello" << endl;
+    
 
 
 
