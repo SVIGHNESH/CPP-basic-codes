@@ -10,7 +10,14 @@ class Hero{
       //properties
       int Health ;
    public:
-      char level ;
+
+          Hero()
+          
+          {
+                  cout << "Constructor Called" <<endl;
+
+          }
+              char level ;
 
 
       int  getHealth(){
@@ -35,25 +42,46 @@ class Hero{
 };
 
 int   main (){
-
-    //creation of the object
-
+    //object created statically
 
 
-    //static allocation
-    Hero a;
-    cout << "Health of a is " << a.getHealth() << endl ;
-    cout << "Level of a is " << a.getLevel() << endl ;
+    cout << "HI" << endl;
+    Hero Ramesh;
+    cout << "Hello" << endl;
 
 
-    //dynamically
-    Hero *b = new Hero;
-    cout << "Health of a is " << (*b).getHealth() << endl ;
-    cout << "Level of a is " << (*b).getLevel() << endl ;
 
 
-    cout << "Health of a is " << b-> getHealth() << endl ;
-    cout << "Level of a is " << b->getLevel() << endl ;
+
+
+
+
+
+
+
+
+
+
+
+
+    // //creation of the object
+
+
+
+    // //static allocation
+    // Hero a;
+    // cout << "Health of a is " << a.getHealth() << endl ;
+    // cout << "Level of a is " << a.getLevel() << endl ;
+
+
+    // //dynamically
+    // Hero *b = new Hero;
+    // cout << "Health of a is " << (*b).getHealth() << endl ;
+    // cout << "Level of a is " << (*b).getLevel() << endl ;
+
+
+    // cout << "Health of a is " << b-> getHealth() << endl ;
+    // cout << "Level of a is " << b->getLevel() << endl ;
 
 
 
