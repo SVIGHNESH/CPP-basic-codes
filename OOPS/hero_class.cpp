@@ -45,8 +45,9 @@ int   main (){
     //object created statically
 
 
+   Hero Ramesh;
+  Hero *h = new Hero;
 
-    Hero Ramesh;
     
 
 
