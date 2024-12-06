@@ -39,6 +39,7 @@ int   main (){
     //creation of the object
 
 
+
     //static allocation
     Hero a;
     cout << "Health of a is " << a.getHealth() << endl ;
