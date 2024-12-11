@@ -6,20 +6,20 @@ using namespace std;
 
 class Hero{
 
-private:
+public:
   static int timeToComplete;
+
+  static int random(){
+    
+  }
  };
 
- int Hero :: timeToComplete = 2;
+int Hero :: timeToComplete = 2;
 
 
 int   main (){
+
+ 
+
   cout << Hero::timeToComplete << endl;
-
-
-
-
-
-
-
 }
