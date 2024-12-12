@@ -3,11 +3,10 @@
 
 using namespace std;
 
-
 class Hero{
 
 public:
-  static int timeToComplete;
+  static int timeTComplete;
 
   static int random(){
     
