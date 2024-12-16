@@ -6,11 +6,11 @@ using namespace std;
 class Hero{
 
 public:
-  static int timeTComplete;
+  static int timeToComplete;
 
   static int random(){
     
-  }
+  }   
  };
 
 int Hero :: timeToComplete = 2;
