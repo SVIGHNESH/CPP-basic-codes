@@ -46,6 +46,8 @@ int main() {
                 scanf("%d", &num1);
                 printf("Enter divisor: ");
                 scanf("%d", &num2);
+
+                
                 if(num2 != 0) {
                     printf("%d / %d = %d\n", num1, num2, num1 / num2);
                 } else {

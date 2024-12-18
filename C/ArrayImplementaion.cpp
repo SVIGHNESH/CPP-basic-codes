@@ -2,7 +2,7 @@
 
 #define MAX_SIZE 100
 
-// Function prototypes
+
 
 void insert(int arr[], int *size, int element, int position) {
     for (int i = *size; i > position; i--) {
@@ -12,16 +12,13 @@ void insert(int arr[], int *size, int element, int position) {
     (*size)++;
 }
 
-// Function to delete an element from the array
 void deleteElement(int arr[], int *size, int position) {
     for (int i = position; i < *size - 1; i++) {
         arr[i] = arr[i + 1];
     }
     (*size)--;
 }
-
-// Function to search for an element in the array
-int search(int arr[], int size, int element) {
+ search(int arr[], int size, int element) {
     for (int i = 0; i < size; i++) {
         if (arr[i] == element) {
             return i;
@@ -30,7 +27,7 @@ int search(int arr[], int size, int element) {
     return -1;
 }
 
-// Function to display the array elements
+
 void display(int arr[], int size) {
     if (size == 0) {
         printf("Array is empty.\n");
