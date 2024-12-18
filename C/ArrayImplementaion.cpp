@@ -59,7 +59,7 @@ int main() {
 
         switch (choice) {
             case 1:
-                printf("Enter element to insert: ");
+                printf("Enter the element :");
                 scanf("%d", &element);
                 printf("Enter position (1 to %d): ", size + 1);
                 scanf("%d", &position);
@@ -67,7 +67,7 @@ int main() {
                     insert(arr, &size, element, position - 1);
                     printf("Element inserted successfully.\n");
                 } else {
-                    printf("Invalid position!\n");
+                    printf("Invalid Operation!");
                 }
                 break;
 
@@ -94,13 +94,13 @@ int main() {
                 break;
 
             case 4:
-                display(arr, size);
-                break;
+                    display(arr,size);
+                    break;
+
 
             case 5:
-                printf("Exiting program.\n");
-                break;
-
+               printf("Exiting The Program");
+               break;
             default:
                 printf("Invalid choice! Please try again.\n");
         }
@@ -109,4 +109,3 @@ int main() {
     return 0;
 }
 
-// Function to insert an element into the array
