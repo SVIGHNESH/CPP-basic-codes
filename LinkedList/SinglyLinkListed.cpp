@@ -34,10 +34,10 @@ void insertAtTail(Node* &tail , int d){
 
 }
 
-void InsertAtPosition(int position , int d,Node* &head){
+void InsertAtPosition(int position , int d,Node* &head,Node* &tail){
 
     if(position == 1){
-        insertAtHead(head,d);
+        insertAtHead(head,d);  // insert at the start 
         return;
     }
      Node *temp = head;
@@ -46,6 +46,12 @@ void InsertAtPosition(int position , int d,Node* &head){
      {
         temp = temp -> next;
         cnt++;
+     }
+
+     //inserting at the last position 
+     if(temp -> next == NULL){
+        insertAtTail(tail,d);
+        return;
      }
 
      //creating a node for the d
@@ -80,17 +86,20 @@ int main (){
 
         print(head);
 
-    //
+    //insert at the start/head of the list 
     insertAtHead(head,12);
 
-    print(head);
+    print(head); // print the ll
 
-    insertAtTail(tail,34);
+    insertAtTail(tail,34); //adding/inserting at the last/end of the ll
 
     print (head);
 
-   InsertAtPosition(1,463,head);
+    InsertAtPosition(4,463,head,tail);
    print(head);
 
+   cout << "Head : " <<head -> data << endl;
+   cout << "Tail : " << tail -> data << endl;
 
-}
+
+} 
