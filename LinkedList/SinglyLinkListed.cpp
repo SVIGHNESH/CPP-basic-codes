@@ -32,23 +32,41 @@ class Node{
 };
 
 void insertAtHead(Node *&head,int d ){
-
-    // new node created 
-        Node *temp = new Node(d);
-        temp -> next = head;
+    if(head == NULL){
+        Node* temp = new Node(d);
+       
         head = temp;
+
+
+    }
+    else{
+        // new node created 
+                Node *temp = new Node(d);
+                temp -> next = head;
+                head = temp;
+    }
+    
 
 }
 
 void insertAtTail(Node* &tail , int d){
-     // new node created 
+
+    if(tail == NULL){
+        Node* temp = new Node(d);
+        tail = temp;
+        head = temp;
+
+
+    }
+    else{
+        // new node created 
         Node *temp = new Node(d);
         tail -> next = temp;
         tail = temp ;
-
-
+    }
 }
-
+     
+     
 void InsertAtPosition(int position , int d,Node* &head,Node* &tail){
 
     if(position == 1){
