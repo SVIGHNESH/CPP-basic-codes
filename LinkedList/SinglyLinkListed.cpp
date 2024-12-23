@@ -55,6 +55,8 @@ void InsertAtPosition(int position , int d,Node* &head,Node* &tail){
         insertAtHead(head,d);  // insert at the start 
         return;
     }
+
+    //any position except first and last 
      Node *temp = head;
      int cnt = 1;
      while(cnt < position-1)
