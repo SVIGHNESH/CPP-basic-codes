@@ -55,13 +55,18 @@ void insertAtHead(Node* &head,int d){
 }
 
 void insertAtTail(Node* &tail,int d){
+        Node* temp = new Node(d);
+        tail -> next = temp;
+        temp -> prev = tail;
+        tail = temp;
 
 }
 int main (){
         Node* node1 = new Node(10);
         Node* head = node1;
+        Node* tail = node1;
 
-        
+
 
         print(head);
         //cout << "Length of the LinkedList is " << getLength(head) << endl;
@@ -75,6 +80,11 @@ int main (){
         print(head);
 
         insertAtHead(head,13);
+        print(head);
+
+        insertAtTail(tail,44);
+        print(head);
+
        
         
 
