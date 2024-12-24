@@ -54,7 +54,7 @@ void insertAtTail(Node* &tail , int d){
     if(tail == NULL){
         Node* temp = new Node(d);
         tail = temp;
-        head = temp;
+        
 
 
     }
