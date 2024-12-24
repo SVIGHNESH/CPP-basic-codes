@@ -156,7 +156,7 @@ int main (){
     //insert at the start/head of the list 
     insertAtHead(head,12);
 
-    print(head); // print the ll
+    print(head); // print the lle
 
     insertAtTail(tail,34); //adding/inserting at the last/end of the ll
 
