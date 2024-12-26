@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-class Node{
+class Node{    
     public : 
         int data;
         Node* next;
@@ -30,6 +30,7 @@ class Node{
         }
 
 };
+
 
 void insertAtHead(Node *&head,int d ){
     if(head == NULL){
