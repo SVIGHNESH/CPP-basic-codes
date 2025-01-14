@@ -15,8 +15,9 @@ void sayDigits(int n,string arr[]){
 int main (){
     string arr[10]={"Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine"};
     int n;
+    cout << "Enter the Number(in Digit):" << endl;
     cin >> n;
-    cout << endl <<endl;
+    cout << endl ;
     sayDigits(n,arr);
     cout << endl ;
 }
