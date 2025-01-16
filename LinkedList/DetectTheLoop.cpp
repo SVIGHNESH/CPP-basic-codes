@@ -206,7 +206,7 @@ Node* getStartingNode(Node* head){
 
 void removeLoop(Node* head){
     if(head == NULL)
-        return;
+        return ;
 
     Node* startOfLoop =  getStartingNode(head);
     Node* temp = startOfLoop;
