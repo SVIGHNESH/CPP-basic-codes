@@ -181,6 +181,7 @@ bool FloydDetectionLoop(Node* head){
         slow = slow -> next ;
 
         if(slow == fast){
+            cout << "The loop is present at " << slow -> data << endl;
             return true;
 
         }
@@ -199,7 +200,7 @@ int main(){
     insertAtTail(tail,323);
     insertAtTail(tail,45);
     insertAtTail(tail, 56);
-    //tail -> next = head -> next ;
+    tail -> next = head -> next ;
 
     cout << "Head is at" <<head -> data << endl;
     cout << "Tail is at " << tail -> data << endl;
