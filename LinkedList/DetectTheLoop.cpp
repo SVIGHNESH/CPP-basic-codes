@@ -165,9 +165,9 @@ bool detectLoop(Node* head){
 
 }
 
-bool FloydDetectionLoop(Node* head){
+Node* FloydDetectionLoop(Node* head){
     if(head == NULL){
-        return false;
+        return NULL;
     }
     Node* fast = head -> next;
     Node* slow = head;
@@ -181,17 +181,32 @@ bool FloydDetectionLoop(Node* head){
         slow = slow -> next ;
 
         if(slow == fast){
-            cout << "The loop is present at " << slow -> data << endl;
-            return true;
+           // cout << "The loop is present at " << slow -> data << endl;
+            return slow;
 
         }
     }
-    return false;
+    return NULL;
     
+}
+
+Node* getStartingNode(Node* head){
+    if(head == NULL)
+        return NULL;
+
+
+    Node* intersection = FloydDetectionLoop(head);
+    Node* slow = head;
+    while(slow != intersection){
+        slow = slow -> next;
+        intersection = intersection -> next;
+    }
+
+    return slow;
 }
 int main(){
     Node* node1 = new Node(10);
-    cout << node1-> data << endl;
+    //cout << node1-> data << endl;
     Node* head = node1;
     Node* tail = node1;
 
@@ -202,8 +217,8 @@ int main(){
     insertAtTail(tail, 56);
     tail -> next = head -> next ;
 
-    cout << "Head is at" <<head -> data << endl;
-    cout << "Tail is at " << tail -> data << endl;
+    // cout << "Head is at" <<head -> data << endl;
+    // cout << "Tail is at " << tail -> data << endl;
 
     if(FloydDetectionLoop(head)){
         cout << "The Cycle is present"<<endl;
@@ -212,6 +227,8 @@ int main(){
     else{
         cout << "The Cycle is not Present"<<endl;
     }
+    Node* starting = getStartingNode(head);
+    cout << starting -> data << endl;
 
 
 }
