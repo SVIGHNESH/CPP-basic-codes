@@ -204,6 +204,22 @@ Node* getStartingNode(Node* head){
 
     return slow;
 }
+
+void removeLoop(Node* head){
+    if(head == NULL)
+        return;
+
+    Node* startOfLoop =  getStartingNode(head);
+    Node* temp = startOfLoop;
+
+    while(temp -> next != startOfLoop){
+        temp = temp -> next;
+    } 
+
+    temp -> next = NULL;
+
+
+}
 int main(){
     Node* node1 = new Node(10);
     //cout << node1-> data << endl;
@@ -228,7 +244,9 @@ int main(){
         cout << "The Cycle is not Present"<<endl;
     }
     Node* starting = getStartingNode(head);
-    cout << starting -> data << endl;
+    cout << "Loop Starts AT " << starting -> data ;
+
+    removeLoop(head);
 
 
 }
