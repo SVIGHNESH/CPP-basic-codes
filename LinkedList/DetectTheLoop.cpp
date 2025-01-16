@@ -191,10 +191,9 @@ Node* FloydDetectionLoop(Node* head){
 }
 
 Node* getStartingNode(Node* head){
-    if(head == NULL)
+    if(head == NULL){
         return NULL;
-
-
+    }
     Node* intersection = FloydDetectionLoop(head);
     Node* slow = head;
     while(slow != intersection){
@@ -220,33 +219,39 @@ void removeLoop(Node* head){
 
 
 }
-int main(){
+int main() {
     Node* node1 = new Node(10);
-    //cout << node1-> data << endl;
     Node* head = node1;
     Node* tail = node1;
 
-
-    insertAtTail(tail,34);
-    insertAtTail(tail,323);
-    insertAtTail(tail,45);
+    // Insert nodes
+    insertAtTail(tail, 34);
+    insertAtTail(tail, 323);
+    insertAtTail(tail, 45);
     insertAtTail(tail, 56);
-    tail -> next = head -> next ;
 
-    // cout << "Head is at" <<head -> data << endl;
-    // cout << "Tail is at " << tail -> data << endl;
+    // Create a cycle
+    tail->next = head->next;
 
-    if(FloydDetectionLoop(head)){
-        cout << "The Cycle is present"<<endl;
-        
+    // Detect and handle the loop
+    if (detectLoop(head)) {
+        cout << "Cycle detected." << endl;
+        Node* starting = getStartingNode(head);
+        cout << "Loop starts at: " << starting->data << endl;
+        removeLoop(head);
+    } else {
+        cout << "No cycle detected." << endl;
     }
-    else{
-        cout << "The Cycle is not Present"<<endl;
+
+    // Verify loop removal
+    if (!detectLoop(head)) {
+        cout << "Cycle removed successfully." << endl;
     }
-    Node* starting = getStartingNode(head);
-    cout << "Loop Starts AT " << starting -> data ;
 
-    removeLoop(head);
+    // Print the list
+    print(head);
 
-
+    return 0;
 }
+
+
