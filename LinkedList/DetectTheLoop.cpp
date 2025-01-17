@@ -219,6 +219,29 @@ void removeLoop(Node* head){
 
 
 }
+
+Node* deleteDuplicates(Node* head) {
+        if(head == NULL){
+            return NULL;
+        }
+        ListNode* curr = head;
+
+        while(curr != NULL){
+            if((curr -> next != NULL) && (curr->val == curr -> next -> val)){
+                Node*  next_next = curr-> next -> next ;
+                Node* nodeTodelete= curr -> next ;
+
+                delete(nodeTodelete);
+                curr-> next = next_next;
+
+            }
+            else{
+                curr = curr -> next ;
+            }
+        }
+
+        return head;
+    }
 int main() {
     Node* node1 = new Node(10);
     Node* head = node1;
