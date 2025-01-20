@@ -33,7 +33,7 @@
 
 //approach no. 2 
 
-private:
+
     bool checkPalindrome(vector<int> arr){
         int n = arr.size();
         int s = 0;
@@ -52,7 +52,7 @@ private:
         }
     
   
-  public:
+
     // Function to check whether the list is palindrome.
     bool isPalindrome(Node *head) {
             vector<int> arr;
@@ -64,6 +64,6 @@ private:
             }
             return checkPalindrome(arr);
     }
-};
+
 
 
