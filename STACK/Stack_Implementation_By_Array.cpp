@@ -76,14 +76,4 @@ int main(){
     else{
         cout << "Stack is Not Empty" << endl;
     }
-
-
-
-
-    
-
-
-
-
-
 }
