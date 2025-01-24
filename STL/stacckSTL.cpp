@@ -3,15 +3,10 @@ using namespace std;
 
 class Stack{
     //properties
-
+ public:
     int *arr;
     int top;
     int size;
-
-
-
-
-
     //behaviour
     Stack(int size){
         this -> size = size;
@@ -43,19 +38,40 @@ class Stack{
     }
 
     int peek(){
-        if(top >= 0 && top < size)
+        if(top >= 0)
             return arr[top];
         else{
             cout << "Stack is Empty" << endl; 
-
+            return -1;
         }
     }
 
     bool isEmpty(){
-
+        if(top == -1){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
+   
 };
 int main(){
+
+    Stack st(5);
+
+    st.push(34);
+    st.push(256);
+
+    cout << st.peek() << endl;
+    st.pop();
+    cout << st.peek() << endl;
+    st.pop();
+    cout << st.peek() << endl;
+
+
+
+
     
 /*
     //creation of stack
