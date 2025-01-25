@@ -15,7 +15,7 @@ int main(){
         s.pop();
     }
     
-         cout << ans << endl ;
+    cout <<"Answer of "<< str << " is "<< ans << endl ;
     
     
    
