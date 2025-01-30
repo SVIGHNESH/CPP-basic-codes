@@ -5,5 +5,6 @@ using namespace std;
 int main(){
     queue<int>q;
     q.push(33);
-    q.
+    
+    cout<<"The size of the queue is :" << q.size() << endl;
 }
