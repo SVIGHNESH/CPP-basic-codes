@@ -170,11 +170,11 @@ Node* FloydDetectionLoop(Node* head){
         return NULL;
     }
     Node* fast = head -> next;
-    Node* slow = head;
+    Node* slow = head;//this is the node of slow and fast 
     
     while(slow != NULL && fast != NULL){
         fast = fast -> next ;
-        if(fast != NULL){
+        if(fast != NULL){ 
             fast = fast -> next;
         }
 
