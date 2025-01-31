@@ -92,7 +92,7 @@ void InsertAtPosition(int position , int d,Node* &head,Node* &tail){
 
      //creating a node for the d
     Node* NodeToInsert = new Node(d);
-
+    //this is main logic here to add the node in linked list 
     NodeToInsert -> next = temp -> next;
     temp -> next = NodeToInsert;
 
