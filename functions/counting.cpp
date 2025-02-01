@@ -11,8 +11,8 @@ void printcounting(int n){
     return;
 }
 int main (){
-                int n;
-                cin >>n;
+                int n=5;
+                
                 printcounting(n);
 
 }
