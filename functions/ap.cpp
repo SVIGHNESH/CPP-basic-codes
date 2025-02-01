@@ -5,7 +5,7 @@ int nth_term(int n){
 }
 int main(){
     int n; 
-    cout<<"Enter n : ";
+    cout<<"Enter n : ";//we are getting the value of n from the user 
     cin >> n;
     cout<<"The nth term of the AP is : "<<nth_term(n)<<endl;
     return 0;
