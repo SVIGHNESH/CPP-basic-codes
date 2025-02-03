@@ -4,6 +4,8 @@ int main() {
     char choice;
     int num1, num2;
 
+
+    //this loop will run unles there is a break statement is passed inside the loop
     while(1) {
         printf("\nCalculator Menu:\n");
         printf("A - Addition\n");
