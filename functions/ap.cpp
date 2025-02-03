@@ -9,4 +9,5 @@ int main(){
     cin >> n;
     cout<<"The nth term of the AP is : "<<nth_term(n)<<endl;
     return 0;
+    //i dont't know why i am doing this 
 }
