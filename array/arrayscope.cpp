@@ -20,4 +20,4 @@ int main (){
 
 }
 
-//this is just  a program to understand the scope of variable 
+//this is just  a program to understand the scope of variable of 
