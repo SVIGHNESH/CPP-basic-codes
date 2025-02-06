@@ -14,3 +14,5 @@ int main (){
     int C=3;
     TOH(n,A,B,C);
 }
+
+//this is the tower of hanoi game tha children plays 
