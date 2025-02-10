@@ -19,7 +19,13 @@ void bubbleSort(int arr[], int n)
 
 
 int main(){
-    int arr[9] = [10,9,8,7,6,5,4,3,1];
+    int arr[9] = {10,9,8,7,6,5,4,3,1};
     int n = 9;
-    ans = bubbleSort(arr,n);
+    bubbleSort(arr,n);
+
+    for(int i = 0;i<n;i++){
+        cout << arr[i] << endl;
+        
+    }
+   
 }
