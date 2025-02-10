@@ -1,4 +1,7 @@
-void bubbleSort(vector<int>& arr, int n)
+#include<iostream>
+using namespace std;
+
+void bubbleSort(int arr[], int n)
 {   
     for(int i = 1;i<n;i++){
         //for round 1 to n-1 
@@ -12,4 +15,11 @@ void bubbleSort(vector<int>& arr, int n)
 
             }
     }
+}
+
+
+int main(){
+    int arr[9] = [10,9,8,7,6,5,4,3,1];
+    int n = 9;
+    ans = bubbleSort(arr,n);
 }

@@ -6,7 +6,7 @@ void merge(int arr[],int s ,int e){
         int len1=mid - s + 1;
         int len2= e - mid;
 
-        int *first = new int[len1];
+        int *first = new int[len1]; 
         int *second = new int[len2];
 
         //copy values
