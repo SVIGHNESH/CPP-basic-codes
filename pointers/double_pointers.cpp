@@ -15,7 +15,7 @@ int main(){
     cout << *p << endl;
     cout << p << endl;
     cout << &p << endl;
-    cout << *p2 << endl;
+    cout << *p2 << endl; //this is all the crazy stuff related to the pointers
     cout << p2 << endl;
     cout << &p2 << endl;
     cout << ***p3 << endl;
