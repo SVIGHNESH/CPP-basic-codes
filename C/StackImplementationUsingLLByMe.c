@@ -5,8 +5,9 @@ struct stack{
     struct stack *next ;
 
 };
-void push(struct  stack * top,int data){
-    struct stack* new = (struct stack*)malloc(sizeof(struct stack*))
+struct  stack * top = NULL;
+void push(int data){
+    struct stack* new = (struct stack*)malloc(sizeof(struct stack*));
     if ( new == NULL){
         printf("Stack is Overflowing");
 
@@ -22,9 +23,9 @@ void push(struct  stack * top,int data){
         top = new ;
     }
 }
-struct stack* pop(struct stack * top){
+struct stack* pop(){
     if(top == NULL){
-        printf("The Stack is OverFlowing");
+        printf("The Stack is UnderFlowing");
     }
     else{
         struct stack* ptr = top;

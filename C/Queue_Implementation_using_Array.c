@@ -2,9 +2,26 @@
 
 int F = -1;  // Front pointer
 int R = -1;  // Rear pointer
+int isFull(int Q[],int n ){
+    if(R == n-1){
+        return 1;
 
+    }
+    else{
+        return 0;
+    }
+    
+}
+int isEmpty(int Q[],int n ){
+    if(F == -1){
+        return 1;
+    }
+    else{
+        return 0;
+    }
+}
 void Enqueue(int Q[], int n, int x) {
-    if (R == n - 1) {  // Overflow condition
+    if (isFull(Q,n)) {  // Overflow condition
         printf("Queue is in Overflow\n");
         return;
     }
