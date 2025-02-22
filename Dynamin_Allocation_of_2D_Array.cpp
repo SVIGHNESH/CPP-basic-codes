@@ -15,8 +15,21 @@ int main(){
     {
         arr[i] = new int [col];
     }
-    
+   
 
+        vim.diagnostic.config({
+            -- update_in_insert = true,
+            float = {
+                focusable = false,
+                style = "minimal",
+                border = "rounded",
+                source = "always",
+                header = "",
+                prefix = "",
+            },
+        })
+    end
+}
     //taking input
     cout << "ENter the elements:- "<<endl;
      for(int i = 0;i<row; i++){
