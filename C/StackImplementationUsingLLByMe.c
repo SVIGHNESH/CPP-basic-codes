@@ -11,7 +11,27 @@ void push(struct  stack * top,int data){
         printf("Stack is Overflowing");
 
     }
-    if(top == NULL){
-        
+    else if(top == NULL){
+        new -> data = data;
+        new -> next = NULL;
+        top = new ;
+    }
+    else{
+        new -> data = data ;
+        new -> next = top;
+        top = new ;
     }
 }
+struct stack* pop(struct stack * top){
+    if(top == NULL){
+        printf("The Stack is OverFlowing");
+    }
+    else{
+        struct stack* ptr = top;
+        top = top -> next ;
+        free(ptr);
+    }
+    return top;
+}
+
+
