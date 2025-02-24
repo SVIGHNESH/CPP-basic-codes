@@ -24,8 +24,8 @@ void Enqueue(int Q[], int n, int x) {
     if (isFull(Q,n)) {  // Overflow condition
         printf("Queue is in Overflow\n");
         return;
-    }
     if (F == -1) {  // If queue is initially empty
+    }
         F = R = 0;
     } else {
         R++;
@@ -78,3 +78,4 @@ int main() {
 
     return 0;
 }
+//this is the just the begining
