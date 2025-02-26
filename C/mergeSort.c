@@ -7,18 +7,18 @@ void merge(int arr[],int s ,int e ){
     int second[len2];
 
     int mainArrayIndex = s; 
-    for(int i = 0 ;i< len1;i++){
+    for(int i = 0 ;i< len1;i++){  // here we are copying the value of the arr(main array) into the first array upto the middle index of the main array
         first[i] = arr[mainArrayIndex++];
     }
     mainArrayIndex = middle + 1 ;
-    for (int i = 0 ; i< len2 ;i++){
+    for (int i = 0 ; i< len2 ;i++){ //here we are copying the value of the arr from middle + 1 to the e of the main array 
         second[i] = arr[mainArrayIndex++];
     }
 
     int index1 = 0;
     int index2 = 0;
     mainArrayIndex = s;
-    while(index1 < len1 && index2 <len2){
+    while(index1 < len1 && index2 <len2){ //main merging concpt of two sorted array
         if(first[index1] < second[index2]){
          arr[mainArrayIndex++] =  first[index1++]; 
         }
@@ -27,7 +27,8 @@ void merge(int arr[],int s ,int e ){
         }
 
     }
-
+    
+    //these are for the remaining values that is left in the any of the arrays first or second
     while(index1 < len1){
          arr[mainArrayIndex++] = first[index1++];
     }
