@@ -13,7 +13,8 @@ void selectionSort(int arr[],int n){
                 minIndex = j;
             }
             swap(&arr[i],&arr[minIndex]);
-        }
+        } //this is me doint selectio sort of the array usin;
+        //
     }
     
 }
