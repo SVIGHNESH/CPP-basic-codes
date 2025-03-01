@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 void swap(int *a,int *b){
-    int temp = *a;
+    int temp = *a; // here we are swapping using the pointeres
     *a = *b;
     *b = temp;
 }
