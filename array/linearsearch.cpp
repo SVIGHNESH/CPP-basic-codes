@@ -4,7 +4,7 @@ bool search(int arr[],int size,int key)
 {
      for(int i= 0 ;i<size;i++){
         if(arr[i]==key){
-            return 1;
+            return 1; //this is the array search that checks the array in the whole to find the key 
         }
      }
      return 0;
