@@ -9,7 +9,7 @@ int main() {
     while(1) {
         printf("\nCalculator Menu:\n");
         printf("A - Addition\n");
-        printf("B - Subtraction\n");
+        printf("B - Subtraction\n"); //these choices will be shown in the the display till we get a break statement
         printf("C - Multiplication\n");
         printf("D - Division\n");
         printf("E - Modulus\n");
