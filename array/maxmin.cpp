@@ -45,3 +45,4 @@ int main ()
     cout  <<"Maximum value is: "<<getMax(num,size)<<endl;
      cout <<"Minimum value is: "<<getMin(num,size)<<endl;
 }
+//thois'ljfnsfn r;sdlnf iwenfls ef efid a
