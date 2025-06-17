@@ -24,3 +24,6 @@ int main (){
         cout<<i<<" ";
     }cout<<endl;
 }
+
+
+//i don't know what is going to happen to this repo
